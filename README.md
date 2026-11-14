@@ -1,4 +1,4 @@
-# EarthScope AI — Phase 3
+# EarthScope AI — NASA Earth System Trend Detective
 
 NASA Space Apps Challenge 2026 · CosmoForge AI
 
