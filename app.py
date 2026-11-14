@@ -72,5 +72,10 @@ with gr.Blocks(title='EarthScope AI | CosmoForge AI') as demo:
     demo.load(lambda: compare('Temperature'), outputs=analysis_outputs)
     ai_btn.click(explain, inputs=[variable, ai_rows_state, diff_slope_state, diff_p_state], outputs=ai_output)
 
-if __name__ == '__main__':
-    demo.launch()
+import os
+
+if __name__ == "__main__":
+    demo.launch(
+        server_name="0.0.0.0",
+        server_port=int(os.environ.get("PORT", 7860))
+    )
